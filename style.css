@@ -1,0 +1,333 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  transition: background-color 0.5s;
+}
+img {
+  border: 15px;
+  height: 800px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.button {
+  background-color: cornsilk;
+  border-radius: 20px;
+  border: 2px solid springgreen;
+  font-size: 100px;
+  padding: 50px;
+  font-family: monospace;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #64748b,
+    #6b7280,
+    #71717a,
+    #737373,
+    #78716c,
+    #ef4444,
+    #f97316,
+    #f59e0b,
+    #eab308,
+    #84cc16,
+    #22c55e,
+    #10b981,
+    #14b8a6,
+    #06b6d4,
+    #0ea5e9,
+    #3b82f6,
+    #6366f1,
+    #8b5cf6,
+    #a855f7,
+    #d946ef,
+    #ec4899,
+    #f43f5e,
+    #a21caf,
+    #c026d3,
+    #86198f,
+    #701a75,
+    #e879f9,
+    #f0abfc,
+    #f5d0fe,
+    #fae8ff,
+    #fdf4ff,
+    #fdf2f8,
+    #fce7f3,
+    #fbcfe8,
+    #f9a8d4,
+    #f472b6,
+    #db2777,
+    #be185d,
+    #9d174d,
+    #831843,
+    #fff1f2,
+    #ffe4e6,
+    #fecdd3,
+    #fda4af,
+    #fb7185,
+    #e11d48,
+    #be123c,
+    #9f1239,
+    #881337,
+    #581c87,
+    #6b21a8,
+    #7e22ce,
+    #9333ea,
+    #c084fc,
+    #d8b4fe,
+    #e9d5ff,
+    #f3e8ff,
+    #faf5ff,
+    #4c1d95,
+    #5b21b6,
+    #6d28d9,
+    #7c3aed,
+    #a78bfa,
+    #c4b5fd,
+    #ddd6fe,
+    #ede9fe,
+    #f5f3ff,
+    #312e81,
+    #3730a3,
+    #4338ca,
+    #4f46e5,
+    #818cf8,
+    #a5b4fc,
+    #c7d2fe,
+    #e0e7ff,
+    #eef2ff,
+    #365314,
+    #166534,
+    #15803d,
+    #16a34a,
+    #4ade80,
+    #86efac,
+    #bbf7d0,
+    #dcfce7,
+    #f0fdf4,
+    #365314,
+    #3f6212,
+    #4d7c0f,
+    #65a30d,
+    #a3e635,
+    #bef264,
+    #d9f99d,
+    #ecfccb,
+    #f7fee7,
+    #1e3a8a,
+    #1e40af,
+    #1d4ed8,
+    #2563eb,
+    #60a5fa,
+    #93c5fd,
+    #bfdbfe,
+    #dbeafe,
+    #eff6ff,
+    #0c4a6e,
+    #075985,
+    #0369a1,
+    #0284c7,
+    #0ea5e9,
+    #38bdf8,
+    #7dd3fc,
+    #bae6fd,
+    #e0f2fe,
+    #f0f9ff,
+    #164e63,
+    #155e75,
+    #0e7490,
+    #0891b2,
+    #06b6d4,
+    #22d3ee,
+    #67e8f9,
+    #a5f3fc,
+    #cffafe,
+    #ecfeff,
+    #134e4a,
+    #115e59,
+    #0f766e,
+    #0d9488,
+    #2dd4bf,
+    #5eead4,
+    #99f6e4,
+    #ccfbf1,
+    #f0fdfa,
+    #064e3b,
+    #065f46,
+    #047857,
+    #059669,
+    #34d399,
+    #6ee7b7,
+    #a7f3d0,
+    #d1fae5,
+    #ecfdf5,
+    #713f12,
+    #854d0e,
+    #a16207,
+    #ca8a04,
+    #facc15,
+    #fde047,
+    #fef08a,
+    #fef9c3,
+    #fefce8,
+    #78350f,
+    #92400e,
+    #b45309,
+    #d97706,
+    #fbbf24,
+    #fcd34d,
+    #fde68a,
+    #fef3c7,
+    #fffbeb,
+    #7c2d12,
+    #9a3412,
+    #c2410c,
+    #ea580c,
+    #fb923c,
+    #fdba74,
+    #fed7aa,
+    #ffedd5,
+    #fff7ed,
+    #7f1d1d,
+    #991b1b,
+    #b91c1c,
+    #dc2626,
+    #f87171,
+    #fca5a5,
+    #fecaca,
+    #fee2e2,
+    #fef2f2,
+    #1c1917,
+    #292524,
+    #44403c,
+    #57534e,
+    #a8a29e,
+    #d6d3d1,
+    #e7e5e4,
+    #f5f5f4,
+    #fafaf9,
+    #171717,
+    #262626,
+    #404040,
+    #525252,
+    #a3a3a3,
+    #d4d4d4,
+    #e5e5e5,
+    #f5f5f5,
+    #fafafa,
+    #18181b,
+    #27272a,
+    #3f3f46,
+    #52525b,
+    #a1a1aa,
+    #d4d4d8,
+    #e4e4e7,
+    #f4f4f5,
+    #fafafa,
+    #111827,
+    #1f2937,
+    #374151,
+    #4b5563,
+    #9ca3af,
+    #d1d5db,
+    #e5e7eb,
+    #f3f4f6,
+    #f9fafb,
+    #0f172a,
+    #1e293b,
+    #334155,
+    #475569,
+    #94a3b8,
+    #cbd5e1,
+    #e2e8f0,
+    #f1f5f9,
+    #f8fafc
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button:active {
+  color: #000;
+}
+
+.button:active:after {
+  background: transparent;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  img {
+    height: 400px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  button {
+    overflow: hidden;
+  }
+}
