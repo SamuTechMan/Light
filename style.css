@@ -2,28 +2,39 @@ html,
 body {
   height: 100%;
 }
+
 body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   user-select: none;
   transition: background-color 0.5s;
+  font-size: 16px;
 }
-img {
-  border: 15px;
-  height: 800px;
+.tittle {
+  font-size: 54px;
+}
+.container {
+  text-align: center;
 }
 .dark-mode {
   background-color: black;
   color: white;
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
 .button {
   background-color: cornsilk;
   border-radius: 20px;
   border: 2px solid springgreen;
-  font-size: 100px;
-  padding: 50px;
+  font-size: 2em;
+  padding: 1em;
   font-family: monospace;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -316,18 +327,75 @@ img {
     background-position: 0 0;
   }
 }
+
+img {
+  height: 35em;
+}
+@media only screen and (max-width: 1366px) {
+  img {
+    height: 20em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .tittle {
+    font-size: 2.5em;
+  }
+  .button {
+    margin-top: 0.5em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  img {
+    height: 35em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .tittle {
+    font-size: 2.5em;
+  }
+  .button {
+    margin-top: 1em;
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 768px) {
   img {
-    height: 400px;
+    height: 30em;
   }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    overflow: hidden;
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 1em;
   }
-  button {
-    overflow: hidden;
+  .tittle {
+    font-size: 2.5em;
+  }
+  .button {
+    margin-top: 1em;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    height: 20em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+
+  .button {
+    margin-top: 1em;
+    width: 80%;
   }
 }
