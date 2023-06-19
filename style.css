@@ -342,7 +342,7 @@ img {
     margin-top: 1em;
   }
   .tittle {
-    font-size: 2em;
+    font-size: 3em;
   }
   .button {
     width: 100%;
@@ -355,7 +355,7 @@ img {
 
 @media only screen and (max-width: 1024px) {
   img {
-    height: 35em;
+    height: 22em;
   }
 
   .buttons {
@@ -370,10 +370,14 @@ img {
     width: 80%;
     margin: 0.15em;
   }
+  #tittle {
+    height: 1em;
+    width: 1em;
+  }
 }
 @media only screen and (max-width: 768px) {
   img {
-    height: 30em;
+    height: 20em;
   }
 
   .buttons {
@@ -390,6 +394,10 @@ img {
     font-size: 1.1em;
     padding-bottom: 2em;
   }
+  #tittle img {
+    height: 1em;
+    width: 1em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -403,6 +411,10 @@ img {
   }
   .tittle {
     font-size: 1.8em;
+  }
+  #tittle {
+    height: 1em;
+    width: 1em;
   }
   .button {
     margin-top: 1em;
